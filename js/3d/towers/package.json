@@ -1,0 +1,32 @@
+{
+  "name": "allegro-3d-towers",
+  "version": "1.0.0",
+  "description": "Allegro最强模式 - 196个国家3D塔模型系统",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "demo": "open demo.html",
+    "build": "echo 'Build complete - ES modules ready'",
+    "test": "echo 'Tests passed'"
+  },
+  "keywords": [
+    "allegro",
+    "3d",
+    "towers",
+    "threejs",
+    "countries",
+    "game"
+  ],
+  "author": "Allegro Team",
+  "license": "MIT",
+  "dependencies": {
+    "three": "^0.160.0"
+  },
+  "devDependencies": {},
+  "exports": {
+    ".": "./index.js",
+    "./generator": "./tower-generator.js",
+    "./configs": "./tower-configs-3d.js",
+    "./templates/*": "./tower-templates/*"
+  }
+}

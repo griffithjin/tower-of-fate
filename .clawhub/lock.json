@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "skills": {
+    "session-logs": {
+      "version": "1.0.0",
+      "installedAt": 1772699697761
+    },
+    "openai-whisper": {
+      "version": "1.0.0",
+      "installedAt": 1772699700261
+    },
+    "1password": {
+      "version": "1.0.1",
+      "installedAt": 1772699758531
+    },
+    "peekaboo": {
+      "version": "1.0.0",
+      "installedAt": 1772700205608
+    },
+    "model-usage": {
+      "version": "1.0.0",
+      "installedAt": 1772700268134
+    },
+    "bluebubbles": {
+      "version": "1.0.0",
+      "installedAt": 1772700283299
+    },
+    "camsnap": {
+      "version": "1.0.0",
+      "installedAt": 1772700316665
+    },
+    "imsg": {
+      "version": "1.0.0",
+      "installedAt": 1772700425473
+    },
+    "gog": {
+      "version": "1.0.0",
+      "installedAt": 1772700438828
+    },
+    "goplaces": {
+      "version": "1.0.0",
+      "installedAt": 1772700461413
+    },
+    "mac-tts": {
+      "version": "1.0.0",
+      "installedAt": 1772700572521
+    },
+    "edge-tts": {
+      "version": "2.0.0",
+      "installedAt": 1772700590291
+    },
+    "openai-tts": {
+      "version": "1.0.0",
+      "installedAt": 1772700598442
+    },
+    "agent-browser": {
+      "version": "0.2.0",
+      "installedAt": 1772700975465
+    },
+    "calendar": {
+      "version": "1.0.0",
+      "installedAt": 1772701097112
+    },
+    "filesystem-mcp": {
+      "version": "1.0.0",
+      "installedAt": 1772701337541
+    },
+    "obsidian": {
+      "version": "1.0.0",
+      "installedAt": 1772701827425
+    },
+    "apple-notes": {
+      "version": "1.0.0",
+      "installedAt": 1772701845253
+    },
+    "self-improving-agent": {
+      "version": "1.0.11",
+      "installedAt": 1772701897994
+    },
+    "github": {
+      "version": "1.0.0",
+      "installedAt": 1772701981548
+    },
+    "nano-pdf": {
+      "version": "1.0.0",
+      "installedAt": 1772702026697
+    },
+    "summarize": {
+      "version": "1.0.0",
+      "installedAt": 1772702035785
+    },
+    "notion": {
+      "version": "1.0.0",
+      "installedAt": 1772702080883
+    },
+    "python-executor": {
+      "version": "0.1.5",
+      "installedAt": 1772712298223
+    }
+  }
+}
