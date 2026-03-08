@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>命运塔 - Tower of Fate 3D</title>
+    <script>
+        // 自动检测并重定向到3D版本
+        window.location.href = 'playable-3d.html';
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: "Microsoft YaHei", sans-serif;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .logo {
+            font-size: 48px;
+            font-weight: 900;
+            color: #ffd700;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+        .subtitle {
+            font-size: 24px;
+            color: #00d4ff;
+            margin-bottom: 40px;
+        }
+        .loading {
+            width: 60px;
+            height: 60px;
+            border: 4px solid rgba(255, 215, 0, 0.3);
+            border-top: 4px solid #ffd700;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 30px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .links {
+            margin-top: 40px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            margin: 10px;
+            font-size: 18px;
+            font-weight: 900;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #ffd700, #ff8c00);
+            color: #000;
+        }
+        .btn-secondary {
+            background: linear-gradient(135deg, #00d4ff, #0066ff);
+            color: #fff;
+        }
+        .btn:hover {
+            transform: translateY(-5px) scale(1.05);
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 20px;
+            padding: 20px;
+            width: 200px;
+        }
+        .feature-icon {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .feature-title {
+            font-size: 18px;
+            font-weight: 900;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+        .feature-desc {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="loading"></div>
+        <div class="logo">🏰 命运塔</div>
+        <div class="subtitle">Tower of Fate - 3D版本</div>
+        
+        <p>正在加载3D游戏引擎...请稍候</p>
+        
+        <div class="links">
+            <a href="playable-3d.html" class="btn btn-primary">🎮 立即开始游戏</a>
+            <a href="playable-3d-optimized.html" class="btn btn-secondary">⚡ 高性能版本</a>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🗼</div>
+                <div class="feature-title">3D塔楼</div>
+                <div class="feature-desc">真实3D渲染，东方明珠风格</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🎴</div>
+                <div class="feature-title">3D卡牌</div>
+                <div class="feature-desc">立体翻转效果，沉浸式体验</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">☁️</div>
+                <div class="feature-title">炫酷特效</div>
+                <div class="feature-desc">筋斗云、火箭、护盾特效</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📱</div>
+                <div class="feature-title">全平台</div>
+                <div class="feature-desc">支持PC、手机、平板</div>
+            </div>
+        </div>
+        
+        <div style="margin-top: 40px; color: rgba(255,255,255,0.5); font-size: 14px;">
+            <p>版本: v2.0 | 优化: LOD, 60fps, 内存优化 | © 2025 金蛇</p>
+        </div>
+    </div>
+</body>
+</html>

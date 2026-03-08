@@ -1,0 +1,327 @@
+/* css/user-agreement.css */
+/* 命运塔用户协议样式 */
+
+.agreement-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    backdrop-filter: blur(5px);
+}
+
+.agreement-content {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border-radius: 20px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    border: 2px solid #ffd700;
+    overflow: hidden;
+}
+
+.agreement-header {
+    padding: 20px 30px;
+    background: linear-gradient(135deg, #ffd700 0%, #ff8c00 100%);
+    color: #1a1a2e;
+    text-align: center;
+    position: relative;
+}
+
+.agreement-header h2 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.last-updated {
+    margin: 0;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.language-selector select {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #1a1a2e;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.agreement-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 30px;
+    color: #e0e0e0;
+    line-height: 1.8;
+}
+
+.agreement-section {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border-left: 4px solid #ffd700;
+}
+
+.agreement-section.warning {
+    background: rgba(255, 193, 7, 0.1);
+    border-left-color: #ffc107;
+}
+
+.agreement-section.important {
+    background: rgba(244, 67, 54, 0.1);
+    border-left-color: #f44336;
+}
+
+.agreement-section h3 {
+    color: #ffd700;
+    margin: 0 0 15px 0;
+    font-size: 18px;
+}
+
+.agreement-section p {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+
+.agreement-section ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.agreement-section li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.minors-restrictions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.restriction-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.restriction-item .age {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 30px;
+    background: #f44336;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 12px;
+}
+
+.agreement-footer {
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+.age-confirm {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.age-confirm input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #ffd700;
+}
+
+.age-confirm span {
+    color: #e0e0e0;
+    font-size: 14px;
+}
+
+.agreement-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 12px 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #ffd700 0%, #ff8c00 100%);
+    color: #1a1a2e;
+}
+
+.btn-primary:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.4);
+}
+
+.btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #e0e0e0;
+    border: 2px solid #e0e0e0;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.agreement-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.agreement-links a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 13px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.agreement-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* RTL支持（阿拉伯语等） */
+.agreement-modal[dir="rtl"] .agreement-section {
+    border-left: none;
+    border-right: 4px solid #ffd700;
+    text-align: right;
+}
+
+.agreement-modal[dir="rtl"] .language-selector {
+    right: auto;
+    left: 20px;
+}
+
+.agreement-modal[dir="rtl"] .restriction-item .age {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    .agreement-content {
+        width: 95%;
+        max-height: 95vh;
+    }
+    
+    .agreement-header {
+        padding: 15px 20px;
+    }
+    
+    .agreement-header h2 {
+        font-size: 18px;
+    }
+    
+    .language-selector {
+        position: static;
+        margin-top: 10px;
+    }
+    
+    .agreement-body {
+        padding: 15px 20px;
+    }
+    
+    .agreement-section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .agreement-section h3 {
+        font-size: 15px;
+    }
+    
+    .agreement-section p,
+    .agreement-section li {
+        font-size: 13px;
+    }
+    
+    .agreement-footer {
+        padding: 15px 20px;
+    }
+    
+    .btn-primary, .btn-secondary {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
+
+/* 滚动条样式 */
+.agreement-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.agreement-body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.agreement-body::-webkit-scrollbar-thumb {
+    background: #ffd700;
+    border-radius: 4px;
+}
+
+.agreement-body::-webkit-scrollbar-thumb:hover {
+    background: #ff8c00;
+}
+
+/* 动画效果 */
+@keyframes agreementFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.agreement-content {
+    animation: agreementFadeIn 0.3s ease-out;
+}
