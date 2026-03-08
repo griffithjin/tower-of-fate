@@ -710,3 +710,15 @@
 [20260308_160824] ℹ️ agent-browser CLI未安装，截图将由OpenClaw Agent异步执行
 [20260308_160824] ✅ 监控完成
 ---
+[20260308_163824] 开始监控任务...
+[20260308_163824] 正在使用浏览器截图...
+[20260308_163824] ✅ 截图请求已记录: /Users/moutai/.openclaw/workspace/toweroffate_screenshots/toweroffate_20260308_163824.png
+[20260308_163824] ℹ️ agent-browser CLI未安装，截图将由OpenClaw Agent异步执行
+[20260308_163824] ✅ 监控完成
+---
+[20260308_170824] 开始监控任务...
+[20260308_170824] 正在使用浏览器截图...
+[20260308_170824] ✅ 截图请求已记录: /Users/moutai/.openclaw/workspace/toweroffate_screenshots/toweroffate_20260308_170824.png
+[20260308_170824] ℹ️ agent-browser CLI未安装，截图将由OpenClaw Agent异步执行
+[20260308_170824] ✅ 监控完成
+---
